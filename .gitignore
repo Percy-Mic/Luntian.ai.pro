@@ -1,0 +1,16 @@
+/.env
+/vendor/
+/node_modules/
+/.idea/
+/.vscode/
+/vendor/
+.env
+.env.local
+.env.*.local
+/public/uploads/payment-proofs/*
+!/public/uploads/payment-proofs/.gitkeep
+/storage/
+*.log
+.DS_Store
+Thumbs.db
+firebase-service-account.json
