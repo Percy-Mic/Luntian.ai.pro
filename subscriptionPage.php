@@ -457,5 +457,5 @@
     });
 </script>
 <script src="/assets/js/luntian-api.js"></script>
-<script src="assets/js/payment-gcash.js"></script>
+<script src="/assets/js/payment-gcash.js"></script>
 </body></html>
