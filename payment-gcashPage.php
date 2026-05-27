@@ -30,7 +30,7 @@
 
 <div class="rounded-2xl border border-white/10 bg-white/5 p-6 text-center">
 <p class="text-sm text-white/60 mb-3">Scan to pay</p>
-<img id="gcash-qr" alt="GCash QR Code" class="mx-auto w-56 h-56 object-contain rounded-xl bg-white p-2" src="public/assets/images/gcash-qr.png" onerror="this.style.display='none';document.getElementById('qr-missing').classList.remove('hidden')"/>
+<img id="gcash-qr" alt="GCash QR Code" class="mx-auto w-56 h-56 object-contain rounded-xl bg-white p-2" src="../assets/images/gcash-qr.png" onerror="this.style.display='none';document.getElementById('qr-missing').classList.remove('hidden')"/>
 <p id="qr-missing" class="hidden text-amber-300 text-sm">Add your QR image at <code class="bg-black/30 px-1 rounded">public/assets/images/gcash-qr.png</code></p>
 <p class="mt-3 text-sm"><span class="text-white/50">Account:</span> <span id="gcash-name">—</span></p>
 <p class="text-sm"><span class="text-white/50">Number:</span> <span id="gcash-mobile">—</span></p>
@@ -51,8 +51,8 @@
 <p id="payment-status-msg" class="text-sm"></p>
 </form>
 </div>
-<script src="/assets/js/luntian-api.js"></script>
-<script src="assets/js/payment-gcash.js"></script>
+<script src="../js/luntian-api.js"></script>
+<script src="../js/payment-gcash.js"></script>
 <script>
 (async function () {
   const params = new URLSearchParams(location.search);
@@ -65,12 +65,12 @@
   }
   await LuntianAPI.requireAuth('signinPage.php');
   try {
-    const cfg = await LuntianAPI.api('/api/payments/config.php');
+    const cfg = await LuntianAPI.api('../payments/config.php');
     document.getElementById('gcash-name').textContent = cfg.gcash.accountName;
     document.getElementById('gcash-mobile').textContent = cfg.gcash.mobile || 'Set GCASH_MOBILE in .env';
     if (cfg.gcash.qrImageUrl) document.getElementById('gcash-qr').src = cfg.gcash.qrImageUrl;
     if (ref) {
-      const st = await LuntianAPI.api('/api/payments/status.php?ref=' + encodeURIComponent(ref));
+      const st = await LuntianAPI.api('../payments/status.php?ref=' + encodeURIComponent(ref));
       const p = st.payment;
       document.getElementById('payment-details').innerHTML =
         '<p><strong>Amount:</strong> ₱' + Number(p.amount_php).toLocaleString() + '</p>' +
