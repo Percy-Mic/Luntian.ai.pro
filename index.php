@@ -594,6 +594,6 @@
             window.location.href = 'signinPage.php';
         });
     </script>
-<script src="/assets/js/luntian-api.js"></script>
-<script src="/assets/js/chat-client.js"></script>
+<script src="assets/js/luntian-api.js"></script>
+<script src="assets/js/chat-client.js"></script>
 </body></html>
