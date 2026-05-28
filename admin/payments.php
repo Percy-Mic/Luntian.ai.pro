@@ -63,7 +63,7 @@
     const list = document.getElementById('list');
     list.innerHTML = '<p class="text-slate-400">Loading…</p>';
     try {
-      const data = await adminFetch('/admin/payments.php?status=submitted');
+      const data = await adminFetch('/api/admin/payments.php?status=submitted');
       if (!data.payments.length) {
         list.innerHTML = '<p class="text-slate-400">No submitted payments waiting.</p>';
         return;
