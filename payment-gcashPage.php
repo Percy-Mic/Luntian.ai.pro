@@ -30,7 +30,7 @@
 
 <div class="rounded-2xl border border-white/10 bg-white/5 p-6 text-center">
 <p class="text-sm text-white/60 mb-3">Scan to pay</p>
-<img id="gcash-qr" alt="GCash QR Code" class="mx-auto w-56 h-56 object-contain rounded-xl bg-white p-2" src="../assets/images/gcash-qr.png" onerror="this.style.display='none';document.getElementById('qr-missing').classList.remove('hidden')"/>
+<img id="gcash-qr" alt="GCash QR Code" class="mx-auto w-56 h-56 object-contain rounded-xl bg-white p-2" src="../assets/images/gcash-qr.png" />
 <p id="qr-missing" class="hidden text-amber-300 text-sm">Add your QR image at <code class="bg-black/30 px-1 rounded">public/assets/images/gcash-qr.png</code></p>
 <p class="mt-3 text-sm"><span class="text-white/50">Account:</span> <span id="gcash-name">—</span></p>
 <p class="text-sm"><span class="text-white/50">Number:</span> <span id="gcash-mobile">—</span></p>
