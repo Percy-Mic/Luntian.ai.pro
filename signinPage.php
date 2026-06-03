@@ -277,7 +277,7 @@
 </div>
 </div>
 </main>
-<script src="/assets/js/luntian-api.js"></script>
+<script src="assets/js/luntian-api.js"></script>
 <!-- Interactions Script -->
 <script>
         document.addEventListener('DOMContentLoaded', () => {
