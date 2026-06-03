@@ -132,7 +132,8 @@
             right: 0;
             z-index: 70;
             width: 85%;
-        }#responsivebtn {
+        }
+        #responsivebtn {
         display: block;
         }
         #mobileclosefolder {
