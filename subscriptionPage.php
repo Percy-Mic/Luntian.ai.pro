@@ -362,6 +362,12 @@
 </div>
 </section>
 </div>
+<!-- Remove Subscription Action -->
+<div class="max-w-6xl mx-auto px-container-margin mt-4 pt-4 border-t border-outline-variant/20">
+<button class="text-error hover:bg-error/5 px-4 py-2 rounded-lg text-label-md transition-colors w-full text-center" onclick="toggleModal(true)">
+                            Remove Subscription
+                        </button>
+</div>
 </main>
 <!-- Subscription Removal Confirmation Modal -->
 <div class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4" id="removalModal">
@@ -383,12 +389,6 @@
             </button>
 </div>
 </div>
-</div>
-<!-- Remove Subscription Action -->
-<div class="mt-4 pt-4 border-t border-outline-variant/20">
-<button class="text-error hover:bg-error/5 px-4 py-2 rounded-lg text-label-md transition-colors w-full text-center" onclick="toggleModal(true)">
-                            Remove Subscription
-                        </button>
 </div>
 <!-- Simple Footer -->
 <footer class="py-12 border-t border-outline-variant/10 dark:border-outline/10">
