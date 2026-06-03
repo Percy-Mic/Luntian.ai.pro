@@ -6,9 +6,11 @@
     { "src": "admin/**/*.php", "use": "vercel-php@0.7.1" }
   ],
   "routes": [
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "/public/(.*)", "dest": "/public/$1" },
     { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/(.*)", "dest": "/$1" },
-    { "src": "/asset/js/(.*)", "dest": "/asset/js/$1" }
+    { "src": "/(.*\\.php)$", "dest": "/$1" },
+    { "src": "/(?!assets|public|api)(.+)", "dest": "/$1.php" }
   ],
   "env": {
     "APP_ENV": "production"
