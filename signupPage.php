@@ -284,7 +284,7 @@
             </span>
 </div>
 </footer>
-<script src="/assets/js/luntian-api.js"></script>
+<script src="assets/js/luntian-api.js"></script>
 <script>
         // Subtle Parallax effect
         document.addEventListener('mousemove', (e) => {
