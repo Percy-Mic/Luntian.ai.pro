@@ -265,6 +265,7 @@
 <button class="p-2 rounded-full text-outline dark:text-outline-variant hover:text-primary dark:hover:text-primary-fixed transition-colors" onclick="toggleDarkMode()">
 <span class="material-symbols-outlined dark:hidden">dark_mode</span>
 <span class="material-symbols-outlined hidden dark:block">light_mode</span>
+</button>
 <button class="w-8 md:w-10 h-8 md:h-10 rounded-full flex items-center justify-center text-on-surface-variant dark:text-outline hover:bg-surface-container-high/50 dark:hover:bg-white/10 transition-colors relative" id="notification-btn">
 <span class="material-symbols-outlined text-[20px] md:text-[24px]">notifications</span>
 <span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full border-2 border-white dark:border-inverse-surface"></span>
