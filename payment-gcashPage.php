@@ -51,8 +51,8 @@
 <p id="payment-status-msg" class="text-sm"></p>
 </form>
 </div>
-<script src="../js/luntian-api.js"></script>
-<script src="../js/payment-gcash.js"></script>
+<script src="assets/js/luntian-api.js"></script>
+<script src="assets/js/payment-gcash.js"></script>
 <script>
 (async function () {
   const params = new URLSearchParams(location.search);
@@ -65,12 +65,12 @@
   }
   await LuntianAPI.requireAuth('signinPage.php');
   try {
-    const cfg = await LuntianAPI.api('../payments/config.php');
+    const cfg = await LuntianAPI.api('/api/payments/config.php');
     document.getElementById('gcash-name').textContent = cfg.gcash.accountName;
     document.getElementById('gcash-mobile').textContent = cfg.gcash.mobile || 'Set GCASH_MOBILE in .env';
     if (cfg.gcash.qrImageUrl) document.getElementById('gcash-qr').src = cfg.gcash.qrImageUrl;
     if (ref) {
-      const st = await LuntianAPI.api('../payments/status.php?ref=' + encodeURIComponent(ref));
+      const st = await LuntianAPI.api('/api/payments/status.php?ref=' + encodeURIComponent(ref));
       const p = st.payment;
       document.getElementById('payment-details').innerHTML =
         '<p><strong>Amount:</strong> ₱' + Number(p.amount_php).toLocaleString() + '</p>' +
