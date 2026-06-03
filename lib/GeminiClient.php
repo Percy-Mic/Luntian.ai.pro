@@ -8,12 +8,12 @@ final class GeminiClient
 {
     public static function chat(string $message, ?string $systemPrompt = null): string
     {
-        $apiKey = env('GEMINI_API_KEY');
+        $apiKey = \env('GEMINI_API_KEY');
         if ($apiKey === null || $apiKey === '') {
             Response::error('Gemini API is not configured on the server.', 503);
         }
 
-        $model = env('GEMINI_MODEL', 'gemini-2.0-flash');
+        $model = \env('GEMINI_MODEL', 'gemini-2.0-flash');
         $url = 'https://generativelanguage.googleapis.com/v1beta/models/'
             . rawurlencode($model)
             . ':generateContent?key=' . rawurlencode($apiKey);
