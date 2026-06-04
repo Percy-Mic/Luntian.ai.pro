@@ -1,0 +1,21 @@
+{
+  "name": "luntian-ai",
+  "version": "1.0.0",
+  "description": "Luntian AI — Generative AI platform for content creation and analysis",
+  "type": "module",
+  "scripts": {
+    "start": "php -S localhost:8000",
+    "build": "echo 'No build step required for PHP backend'"
+  },
+  "keywords": [
+    "ai",
+    "content-creation",
+    "generative-ai",
+    "php"
+  ],
+  "author": "Luntian",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
