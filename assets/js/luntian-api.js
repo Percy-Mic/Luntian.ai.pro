@@ -7,9 +7,16 @@
 
   function apiBase() {
     const meta = document.querySelector('meta[name="luntian-api-base"]');
-    if (meta && meta.content) return meta.content.replace(/\/$/, '');
-    const path = window.location.pathname.replace(/\/[^/]*$/, '');
-    return window.location.origin + path;
+    if (meta && meta.content) {
+      let base = meta.content.replace(/\/$/, '');
+      // Ensure base doesn't end with .php filename
+      if (base.endsWith('.php')) {
+        base = base.replace(/\/[^/]+\.php$/, '');
+      }
+      return base;
+    }
+    // For Vercel, just use origin
+    return window.location.origin;
   }
 
   function getToken() {
