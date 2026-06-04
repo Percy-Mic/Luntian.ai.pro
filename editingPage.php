@@ -296,14 +296,14 @@
 <p class="text-[11px] text-on-surface-variant dark:text-outline truncate">alexander.p@luntian.ai</p>
 </div>
 <div class="p-xs">
-<a class="flex items-center gap-sm px-sm py-2 rounded-xl hover:bg-surface-container dark:hover:bg-white/5 text-label-md transition-colors dark:text-white/80" href="#">
-<span class="material-symbols-outlined text-[18px]">work</span>Manage Subcribcription
+<a class="flex items-center gap-sm px-sm py-2 rounded-xl hover:bg-surface-container dark:hover:bg-white/5 text-label-md transition-colors dark:text-white/80" href="subscriptionPage.php">
+<span class="material-symbols-outlined text-[18px]">work</span>Manage Subscription
                             </a>
 <a class="flex items-center gap-sm px-sm py-2 rounded-xl hover:bg-surface-container dark:hover:bg-white/5 text-label-md transition-colors dark:text-white/80" href="#">
 <span class="material-symbols-outlined text-[18px]">person</span> Profile
                             </a>
 <div class="h-px bg-outline-variant/10 dark:bg-white/5 my-xs"></div>
-<a class="flex items-center gap-sm px-sm py-2 rounded-xl hover:bg-error/5 text-error text-label-md transition-colors" href="signin.php">
+<a class="flex items-center gap-sm px-sm py-2 rounded-xl hover:bg-error/5 text-error text-label-md transition-colors" href="signinPage.php">
 <span class="material-symbols-outlined text-[18px]">logout</span> Logout
                             </a>
 </div>
