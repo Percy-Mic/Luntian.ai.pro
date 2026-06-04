@@ -290,8 +290,8 @@
 <p class="text-[11px] text-on-surface-variant dark:text-outline truncate">alexander.p@luntian.ai</p>
 </div>
 <div class="p-xs">
-<a class="flex items-center gap-sm px-sm py-2 rounded-xl hover:bg-surface-container dark:hover:bg-white/5 text-label-md transition-colors dark:text-white/80" href="subcriptionPage.php">
-<span class="material-symbols-outlined text-[18px]">work</span>Manage Subcribcription
+<a class="flex items-center gap-sm px-sm py-2 rounded-xl hover:bg-surface-container dark:hover:bg-white/5 text-label-md transition-colors dark:text-white/80" href="subscriptionPage.php">
+<span class="material-symbols-outlined text-[18px]">work</span>Manage Subscription
                             </a>
 <a class="flex items-center gap-sm px-sm py-2 rounded-xl hover:bg-surface-container dark:hover:bg-white/5 text-label-md transition-colors dark:text-white/80" href="profilePage.php">
 <span class="material-symbols-outlined text-[18px]">person</span> Profile
