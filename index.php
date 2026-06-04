@@ -190,11 +190,11 @@
 <span class="material-symbols-outlined">laptop</span>
 <span class="font-label-md text-label-md">Screen analysis</span>
 </a>
-<a class="flex items-center gap-md px-md py-sm text-on-surface-variant dark:text-outline hover:text-on-surface dark:hover:text-white hover:bg-surface-container-high dark:hover:bg-white/5 transition-all" href="devstudiopage.php">
+<a class="flex items-center gap-md px-md py-sm text-on-surface-variant dark:text-outline hover:text-on-surface dark:hover:text-white hover:bg-surface-container-high dark:hover:bg-white/5 transition-all" href="devstudioPage.php">
 <span class="material-symbols-outlined">terminal</span>
 <span class="font-label-md text-label-md">Dev Studio</span>
 </a>
-<a class="flex items-center gap-md px-md py-sm text-on-surface-variant dark:text-outline hover:text-on-surface dark:hover:text-white hover:bg-surface-container-high dark:hover:bg-white/5 transition-all" href="editingpage.php">
+<a class="flex items-center gap-md px-md py-sm text-on-surface-variant dark:text-outline hover:text-on-surface dark:hover:text-white hover:bg-surface-container-high dark:hover:bg-white/5 transition-all" href="editingPage.php">
 <span class="material-symbols-outlined">palette</span>
 <span class="font-label-md text-label-md">Editing</span>
 </a>
