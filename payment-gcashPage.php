@@ -51,8 +51,8 @@
 <p id="payment-status-msg" class="text-sm"></p>
 </form>
 </div>
-<script src="assets/js/luntian-api.js"></script>
-<script src="assets/js/payment-gcash.js"></script>
+<script src="/assets/js/luntian-api.js"></script>
+<script src="/assets/js/payment-gcash.js"></script>
 <script>
 (async function () {
   const params = new URLSearchParams(location.search);
