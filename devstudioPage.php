@@ -1,5 +1,6 @@
-<html class="light" lang="en"><head></head><body class="bg-background-cool dark:bg-[#010409] text-on-surface dark:text-[#c9d1d9] font-body overflow-hidden h-screen flex transition-colors">
-
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Luntian AI - Dev Studio</title>
@@ -132,8 +133,7 @@
             right: 0;
             z-index: 70;
             width: 85%;
-        }
-        #responsivebtn {
+        }#responsivebtn {
         display: block;
         }
         #mobileclosefolder {
@@ -169,6 +169,8 @@
         }
     }
 </script>
+</head>
+<body class="bg-background-cool dark:bg-[#010409] text-on-surface dark:text-[#c9d1d9] font-body overflow-hidden h-screen flex transition-colors">
 <!-- Mobile Overlay -->
 <div class="mobile-overlay" id="mobileOverlay" onclick="closeDrawers()"></div>
 <!-- Floating Preview Window -->
@@ -311,10 +313,10 @@
 <p class="text-[11px] text-on-surface-variant dark:text-outline truncate">alexander.p@luntian.ai</p>
 </div>
 <div class="p-xs">
-<a class="block px-4 py-2 text-xs hover:bg-primary/5 hover:text-primary transition-colors" href="subcriptionPage">
-<span class="material-symbols-outlined text-[18px]">work</span>Manage Subcribcription
+<a class="block px-4 py-2 text-xs hover:bg-primary/5 hover:text-primary transition-colors" href="subscriptionPage.php">
+<span class="material-symbols-outlined text-[18px]">work</span>Manage Subscription
                             </a>
-<a class="block px-4 py-2 text-xs hover:bg-primary/5 hover:text-primary transition-colors" href="profilePage">
+<a class="block px-4 py-2 text-xs hover:bg-primary/5 hover:text-primary transition-colors" href="profilePage.php">
 <span class="material-symbols-outlined text-[18px]">person</span> Profile
                             </a>
 <div class="h-px bg-outline-variant/10 dark:bg-white/5 my-xs"></div>
