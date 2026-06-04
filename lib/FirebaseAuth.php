@@ -9,7 +9,7 @@ final class FirebaseAuth
     /** @return array{uid: string, email: ?string, name: ?string, picture: ?string, provider: string} */
     public static function verifyIdToken(string $idToken): array
     {
-        $apiKey = \env('FIREBASE_API_KEY');
+        $apiKey = env('FIREBASE_API_KEY');
         if ($apiKey === null || $apiKey === '') {
             Response::error('Firebase is not configured', 503);
         }
