@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 require_once dirname(__DIR__) . '/_init.php';
 
+use Luntian\AuthHelper;
 use Luntian\Database;
 use Luntian\Response;
-use Luntian\UserRepository;
 
 require_admin();
 
@@ -31,10 +31,10 @@ if ($method === 'GET') {
 
 if ($method === 'POST') {
     $body = read_json_body();
-    $paymentId = (int) ($body['paymentId'] ?? 0);
+    $paymentId = $body['paymentId'] ?? '';
     $action = $body['action'] ?? '';
 
-    if ($paymentId <= 0 || !in_array($action, ['approve', 'reject'], true)) {
+    if ($paymentId === '' || !in_array($action, ['approve', 'reject'], true)) {
         Response::error('paymentId and action (approve|reject) required', 400);
     }
 
@@ -55,7 +55,7 @@ if ($method === 'POST') {
             "UPDATE payments SET status = 'approved', approved_at = NOW(), updated_at = NOW() WHERE id = :id"
         )->execute(['id' => $paymentId]);
 
-        UserRepository::activatePro((int) $payment['user_id'], (string) $payment['billing_cycle']);
+        AuthHelper::activatePro((string) $payment['user_id'], (string) $payment['billing_cycle']);
 
         Response::json(['ok' => true, 'status' => 'approved']);
     }
